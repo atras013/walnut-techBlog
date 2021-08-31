@@ -1,0 +1,84 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x:unset;
+}
+
+html {
+  /* font-size: 10px; */
+
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x:hidden;
+}
+
+@font-face {
+ font-family: Vazir;
+ font-style: normal;
+ font-weight: normal;
+ src: url('../fonts/Vazir.eot');
+ src: url('../fonts/Vazir.eot?#iefix') format('embedded-opentype'), 
+ url('../fonts/Vazir.woff2') format('woff2'), 
+ url('../fonts/Vazir.woff') format('woff'), 
+ url('../fonts/Vazir.ttf') format('truetype');
+}
+@font-face {
+ font-family: Vazir;
+ font-style: normal;
+ font-weight: bold;
+ src: url('../fonts/Vazir-Bold.eot');
+ src: url('../fonts/Vazir-Bold.eot?#iefix') format('embedded-opentype'), 
+ url('../fonts/Vazir-Bold.woff2') format('woff2'), 
+ url('../fonts/Vazir-Bold.woff') format('woff'), 
+ url('../fonts/Vazir-Bold.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Vazir', Arial, sans-serif;
+  font-weight:normal;
+  line-height: 1;
+  font-weight: 400;
+  color: #fff;
+  background-color: #222831;
+  
+  /* background-color: #F0F0F0; */
+
+  /* Only works if there is nothing absolutely positioned in relation to body */
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  
+}
+
+
+.grid {
+  display: grid;
+}
+
+.grid--2--cols {
+  grid-template-columns: 1fr 1fr;
+}
+.grid--3--cols {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+ 
