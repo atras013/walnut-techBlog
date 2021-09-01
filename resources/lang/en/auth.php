@@ -14,7 +14,7 @@ return [
     */
 
     'failed' => 'These credentials do not match our records.',
-    'password' => 'The provided password is incorrect.',
+    'password' => 'پسورد وارد شده اشتباه است!',
     'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
 
 ];

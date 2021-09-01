@@ -51,6 +51,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #fff;
+  text-align: right;
   background-color: #222831;
   
   /* background-color: #F0F0F0; */
@@ -63,7 +64,10 @@ a {
   color: #333;
   
 }
-
+a:hover {
+ 
+  text-decoration: none;
+}
 
 .grid {
   display: grid;
@@ -80,5 +84,7 @@ a {
   max-width: 1400px;
   margin: 0 auto;
 }
+
+
 
  

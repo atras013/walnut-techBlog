@@ -1,5 +1,7 @@
 @extends('layouts.app')
-
+@section('style')
+  <link rel="stylesheet" href="{{ asset('css/log-in/style.css') }}">
+@stop
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -25,4 +27,5 @@
         </div>
     </div>
 </div>
+
 @endsection
