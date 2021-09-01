@@ -28,6 +28,19 @@
                         @enderror
                     </div>
                 </div>
+                 <div class="form-group column">
+                    <label for="username" class="col-md-4 col-form-label text-md-right">نام کاربری</label>
+
+                    <div class="col-md-12">
+                        <input id="username" type="text" class="form-control @error('username') is-invalid @enderror" name="username" value="{{ old('username') }}"  autocomplete="name" autofocus>
+
+                        @error('username')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
+                </div>
 
                 <div class="form-group column">
                     <label for="email" class="col-md-4 col-form-label text-md-right"> ایمیل</label>

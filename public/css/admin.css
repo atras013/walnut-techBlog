@@ -289,6 +289,12 @@ body {
 
 .show { 
     display: flex;
+    background-color: #03415d;
+    
+}
+.change-background { 
+    background-color: #03415d;
+    
 }
 
 .dropdown-menu.show { 

@@ -14,6 +14,21 @@
         <li><a class="main-nav-link" href="#"> آموزش</a></li>
       </ul>
     </nav>
-    <a href="/login" class="sign-in">ورود</a>
+   
+    
+    @if ( Auth::check() && Auth::user()->hasRole() )
+            
+    <a href="{{ route('admin.index') }}" class="sign-in">ادمین</a>
+           
+        @elseif ( Auth::check() )
+
+        <a href="/login" class="sign-in">خروج</a>
+
+        
+       @else
+       <a href="/login" class="sign-in">ورود</a>
+
+      
+    @endif
     
   </header>

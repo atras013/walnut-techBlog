@@ -6,6 +6,7 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Facades\Auth;
 use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
@@ -19,6 +20,8 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
+        'username',
+        'avatar',
         'email',
         'password',
     ];
@@ -41,4 +44,27 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function roles() {
+
+         return $this->belongsToMany('App\Models\Role');
+    }
+
+    public function hasRole() {
+        
+         $user =  Auth::user();
+
+         foreach( $user->roles as $user_role ) { 
+
+               if( $user_role->name == 'Admin' || $user_role->name == 'Author' ) {  
+                    
+                  return true;
+               }
+               else {
+                
+                 return false;
+               }
+         }
+         
+    }
 }
