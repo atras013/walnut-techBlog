@@ -23,7 +23,7 @@
 
     <!-- header -->
    
-    <x-front-page.header> </x-front-page.header>
+    <x-front-side.header> </x-front-side.header>
 
     
     
@@ -33,10 +33,10 @@
 
     <!-- hero section -->
 
-     <x-front-page.hero-section></x-front-page.hero-section>
+     <x-front-side.hero-section></x-front-side.hero-section>
 
      <!-- special section -->
-     <x-front-page.special> </x-front-page.special>
+     <x-front-side.special> </x-front-side.special>
 
       <section class="content-section">
         <h3 class="content-section-header" >جدیدترین اخبار و مقاله‌ها</h3>
@@ -208,7 +208,7 @@
 
           <!-- left sidebar  -->
 
-        <x-front-page.left-side-bar></x-front-page.left-side-bar>
+        <x-front-side.left-side-bar></x-front-side.left-side-bar>
          
       </section>
      
@@ -216,7 +216,7 @@
      
     <!-- footer  -->
      
-     <x-front-page.footer></x-front-page.footer>
+     <x-front-side.footer></x-front-side.footer>
      
      <script src="{{ asset('js/default.js') }}"></script>
   </body>
