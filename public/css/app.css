@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
-
+@charset "UTF-8";
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -61,7 +61,7 @@ body {
   font-weight: 400;
   line-height: 1.6;
   color: #212529;
-  
+  text-align: right;
   background-color: #f8fafc;
 }
 
@@ -75,7 +75,10 @@ hr {
   overflow: visible;
 }
 
-
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
 
 p {
   margin-top: 0;
@@ -350,6 +353,12 @@ template {
   display: none !important;
 }
 
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
 
 h1, .h1 {
   font-size: 2.25rem;
@@ -359,7 +368,9 @@ h2, .h2 {
   font-size: 1.8rem;
 }
 
-
+h3, .h3 {
+  font-size: 1.575rem;
+}
 
 h4, .h4 {
   font-size: 1.35rem;
@@ -1643,7 +1654,7 @@ pre code {
 .table th,
 .table td {
   padding: 0.75rem;
-  vertical-align: top;
+  vertical-align: middle;
   border-top: 1px solid #dee2e6;
 }
 .table thead th {
@@ -4575,6 +4586,8 @@ input[type=button].btn-block {
 
 .pagination {
   display: flex;
+  justify-content: center;
+  direction: ltr;
   padding-left: 0;
   list-style: none;
   border-radius: 0.25rem;
@@ -9991,3 +10004,4 @@ h3 {
     border-color: #dee2e6;
   }
 }
+

@@ -324,3 +324,356 @@
 
 
         }
+        
+        /**  query for show post section **/
+        @media ( max-width:1370px ) {
+
+           
+          .show-post .container  {
+          
+            max-width: 1200px;
+           
+            
+          }
+
+          
+
+          .show-post .post  {
+            width: 850px;
+           
+            
+           }
+          .show-post .post .post-container {
+            width: 800px;
+            
+           }
+
+           .show-post .third-row img {
+ 
+            width:800px;
+           
+         }
+
+         .show-post .related-section {
+  
+          margin-right: 20px;
+          width: 250px;
+        }
+
+        .show-post .post-comments {
+          
+           width: 850px;
+           
+         }
+        .show-post .user-comments-container {
+          
+           width: 800px;
+           
+         }
+        
+
+        }
+
+        @media ( max-width:1220px ) { 
+             
+             
+          .related-section {
+            display: none;
+          }
+          .show-post .post  {
+            max-width: 1100px;
+            margin: auto;
+            border-left: none;
+            
+           }
+          
+            .show-post .container  {
+          
+              max-width: 1000px;
+             
+              
+            }
+
+            .show-post .post-content-section {
+              
+               font-size: 18px;
+              line-height: 32px;
+              
+             }
+  
+            
+  
+            .show-post .post  {
+              width: 850px;
+             
+              
+             }
+            .show-post .post .post-container {
+              width: 850px;
+              
+             }
+  
+             .show-post .third-row img {
+   
+              width:850px;
+             
+           }
+  
+           
+  
+          .show-post .post-comments {
+            
+             width: 850px;
+             
+           }
+          .show-post .user-comments-container {
+            
+             width: 850px;
+             
+           }
+          
+
+               
+           
+        }
+        @media ( max-width:950px ) { 
+             
+             
+          
+          .show-post .post  {
+            max-width: 900px;
+            margin: auto;
+            border-left: none;
+            
+           }
+          
+            .show-post .container  {
+          
+              max-width: 750px;
+             
+              
+            }
+
+            .show-post .post-content-section {
+              
+               font-size: 18px;
+              line-height: 32px;
+              
+             }
+  
+            
+  
+            .show-post .post  {
+              width: 750px;
+             
+              
+             }
+            .show-post .post .post-container {
+              width: 750px;
+              
+             }
+  
+             .show-post .third-row img {
+   
+              width:750px;
+             
+           }
+  
+           
+  
+          .show-post .post-comments {
+            
+             width: 750px;
+             
+           }
+          .show-post .user-comments-container {
+            
+             width: 750px;
+             
+           }
+          
+
+               
+           
+        }
+        @media ( max-width:815px ) { 
+             
+             
+          
+          .show-post .post  {
+            max-width: 700px;
+            margin: auto;
+            border-left: none;
+            
+           }
+          
+            .show-post .container  {
+          
+              max-width: 650px;
+             
+              
+            }
+
+            .show-post .post-content-section {
+              
+               font-size: 18px;
+              line-height: 32px;
+              
+             }
+  
+            
+  
+            .show-post .post  {
+              width: 650px;
+             
+              
+             }
+            .show-post .post .post-container {
+              width: 650px;
+              
+             }
+  
+             .show-post .third-row img {
+   
+              width:650px;
+             
+           }
+  
+           
+  
+          .show-post .post-comments {
+            
+             width: 650px;
+             
+           }
+          .show-post .user-comments-container {
+            
+             width: 650px;
+             
+           }
+          
+
+               
+           
+        }
+
+        @media ( max-width:690px ) { 
+             
+             
+          
+          .show-post .post  {
+            max-width: 600px;
+            margin: auto;
+            border-left: none;
+            
+           }
+          
+            .show-post .container  {
+          
+              max-width: 550px;
+             
+              
+            }
+
+            .show-post .post-content-section {
+              
+               font-size: 18px;
+              line-height: 32px;
+              
+             }
+  
+            
+  
+            .show-post .post  {
+              width: 550px;
+             
+              
+             }
+            .show-post .post .post-container {
+              width: 550px;
+              
+             }
+  
+             .show-post .third-row img {
+   
+              width:550px;
+             
+           }
+  
+           
+  
+          .show-post .post-comments {
+            
+             width: 550px;
+             
+           }
+          .show-post .user-comments-container {
+            
+             width: 550px;
+             
+           }
+          
+
+               
+           
+        }
+        @media ( max-width:590px ) { 
+             
+             
+          
+          .show-post .post  {
+            max-width: 500px;
+            margin: auto;
+            border-left: none;
+            
+           }
+          
+            .show-post .container  {
+          
+              max-width: 400px;
+             
+              
+            }
+
+            .show-post .post-content-section {
+              
+               font-size: 18px;
+              line-height: 32px;
+              
+             }
+  
+            
+  
+            .show-post .post  {
+              width: 400px;
+             
+              
+             }
+            .show-post .post .post-container {
+              width: 400px;
+              
+             }
+  
+             .show-post .third-row img {
+   
+              width:400px;
+             height: 300px;
+           }
+  
+           
+  
+          .show-post .post-comments {
+            
+             width: 400px;
+             
+           }
+          .show-post .user-comments-container {
+            
+             width: 400px;
+             
+           }
+          
+
+               
+           
+        }

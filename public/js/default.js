@@ -42,7 +42,9 @@ var heroSection = document.getElementById("hero");
 
         
         burger.addEventListener('click', () => {
-           
+             
+          alert('hello');
+
            nav.classList.toggle("nav-active");
 
            

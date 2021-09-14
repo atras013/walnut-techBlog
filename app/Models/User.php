@@ -20,6 +20,7 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
+        'id',
         'username',
         'avatar',
         'email',
@@ -67,4 +68,32 @@ class User extends Authenticatable
          }
          
     }
+
+
+    public function isAdmin() {
+
+           foreach($this->roles as $role) {
+                
+                    return  $role->name == "Admin";
+           }
+        
+         
+    }
+
+   public function getAvatarAttribute($value) {
+        
+       if(strpos($value , 'https://') == TRUE || strpos($value , 'http://') == TRUE ) { 
+            
+           return $value;
+       }
+        
+       
+      return asset('storage/' . $value );
+   }
+
+   public function posts() {
+
+      return $this->hasMany('App\Models\Post');
+   }
+
 }

@@ -2,24 +2,21 @@
     <div class="toggle"><ion-icon name="menu-outline"></ion-icon></div>
 
     <div class="user">
-     <img id="user-img" class="user-img" src="images/users/customer-1.jpg" alt="">
+     <img id="user-img" class="user-img" src="{{ asset(Auth()->user()->avatar ) }}" alt="">
   </div>
      <div class="dropdown-menu">
          <div class="user-info">
-            <p class="name">نیما امیدپور</p>
-            <div class="email-address">nima@gmail.com</div>
+            <p class="name">{{ Auth()->user()->name }}</p>
+            <div class="email-address">{{ Auth()->user()->email }}</div>
          </div>
          <div class="setting"> 
-        <a href="">
-           <ion-icon name="shield-half-outline"></ion-icon>
-            <span>امنیت</span> 
+        <a href="{{ route('users.profile.show' , [ 'user'=> auth()->user() ]) }}">
+          <ion-icon name="person-circle-outline"></ion-icon>
+            <span>پروفایل</span> 
         </a>
-        <a href="">
-           <ion-icon name="settings-outline"></ion-icon>
-           <span>تنظیمات</span> 
         
-        </a>
-        <a href="">
+        
+        <a href="{{ route('logout') }}">
            <ion-icon name="exit-outline"></ion-icon>
            <span>خروج</span>
    

@@ -714,23 +714,265 @@ transition: all 0.3s;
 }
 
 
-/* .small-slide1 {
-  grid-column: 3 / 4;
-  grid-row: 1 / 2;
-  border-radius: 20px;
+/** show Post  **/
+
+
+.show-post .container  {
+  display: flex;
+  flex-direction: row;
+  
+  max-width: 1300px;
+  margin-top: 40px;
+  
+}
+.show-post .post  {
+ width: 950px;
+ border-left: 1px solid rgba(255, 255, 255, 0.185);
+ 
+}
+.show-post .post .post-container  {
+ width: 900px;
+ 
+}
+.show-post .container .post-header {
+ 
+   display: flex;
+   flex-direction: column;
+  
+}
+.show-post .third-row img {
+ 
+   width:900px;
+   height: 500px;
+  
+}
+.show-post .post-header .post-second-row  {
+   margin:20px 0 30px 0 ;
+   display: flex;
+   justify-content: space-between;
+   
+}
+.show-post .post-header h3  {
+  line-height: 2.2;
+  font-size: 24px;
+  font-weight: 700;
+}
+.show-post .user-info  {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:10px;
+  font-size: 14px;
+
+}
+.show-post .date-and-time  {
+  margin: 0;
+  font-size: 14px;
+
+}
+.show-post .user-info .user-avatar  {
+  width: 50px;
+  height: 50px; 
+  border-radius: 50%;
 }
 
-.small-slide2 {
-  grid-column: 4 / 5;
-  grid-row: 1 / 2;
+
+.show-post .post-content-section {
+ margin-top: 70px;
+  font-size: 20px;
+ line-height: 32px;
+ 
+}
+.show-post .related-section {
+  
+  margin-right: 20px;
+  width: 300px;
 }
 
-.small-slide3 {
-  grid-column: 3 / 4;
-  grid-row: 2 / 3;
+.related-post-title { 
+
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 25px;
 }
 
-.small-slide4 {
-  grid-column: 4 / 5;
-  grid-row: 2 / 3;
-} */
+.related-post-author {
+  color: #fdfdfdd2;
+  font-size: 13px;
+  margin-top:16px;
+}
+
+.related-section .related-post-title:hover {
+   
+  color: #00ffa7;
+   
+}
+
+.related-section .related-header {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #00ffa7;
+  padding-bottom: 13px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #00ffa7;
+}
+
+
+.show-post .like-and-share  {
+ 
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  justify-content: space-between;
+  font-size: 35px;
+  cursor: pointer;
+}
+.show-post .like-and-share .post-likes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+}
+.show-post .like-and-share .post-likes .likes:hover {
+  color: rgb(249, 24, 128);
+}
+.show-post .like-and-share .post-likes p {
+   font-size: 18px;
+   margin: 0;
+}
+.show-post .share-to-social-media p {
+   font-size: 18px;
+
+   margin: 0 0 0 10px;
+}
+.show-post .share-to-social-media .social-media-logo {
+   font-size: 25px;
+
+  
+}
+.show-post .share-to-social-media .social-media-logo {
+    margin-right: 10px;
+}
+
+.show-post .post-comments {
+ border-top: 1px solid rgba(255, 255, 255, 0.185);
+  margin-top: 50px;
+  width: 950px;
+  
+}
+.show-post .user-comments-container {
+ 
+  width: 900px;
+  
+}
+
+.show-post .post-comments .comments-header {
+   
+   font-size: 20px;
+   margin-bottom: 20px;
+
+
+}
+.show-post .post-comments .comments-form {
+ 
+  margin-top: 40px;
+}
+.show-post .post-comments .comments-form textarea{
+ font-size: 20px;
+}
+.show-post .post-comments .comments-form .send-btn 
+{
+ font-size: 18px;
+ padding:5px 10px;
+}
+.show-post .post-comments .user-comments 
+{
+  
+ font-size: 18px;
+ padding:5px 10px;
+ margin-top: 40px;
+}
+.show-post .post-comments .comments-body
+{
+   
+  line-height: 25px;
+  
+
+}
+.show-post .post-comments .user-comments-info
+{
+   
+  gap: 10px;
+
+}
+.show-post .post-comments .user-comments-info img
+{
+  
+  border-radius: 50%;
+  
+
+}
+.show-post .post-comments .user-comments-info .comments-author
+{
+  margin-right: 0px;
+  
+
+}
+.show-post .post-comments .user-comments-info .comments-time
+{
+  
+  color: #8a94a6;
+  
+
+}
+.show-post .post-comments .user-comments-info .comments-time
+{
+  
+  margin-right: 15px;
+  font-size: 13px;
+}
+.show-post .post-comments .user-comments-info .comments-content
+{
+  
+  margin-top: 10px;
+}
+.show-post .post-comments .user-comments-info .reply-btn 
+{
+  
+  font-size: 14px;
+  margin-top: 10px;
+}
+.show-post .post-comments .user-comments-info .reply-form 
+{
+  display: none;
+  font-size: 14px;
+  margin-top: 20px;
+}
+.show-post .post-comments .user-comments-info textarea 
+{
+
+  font-size: 16px;
+  
+}
+.show-post .post-comments .user-comments-info .reply-form button
+{
+  
+  font-size: 14px;
+  margin-top: 10px;
+
+}
+.show-post .post-comments .comments-replies
+{
+  
+ display: flex;
+ flex-direction: row;
+ column-gap: 15px;
+ margin-top: 30px;
+}
+
+.show-post .post-comments .user-comments-info .reply-author
+{
+  margin-right: 0px;
+  
+
+}

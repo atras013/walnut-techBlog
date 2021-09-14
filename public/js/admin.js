@@ -3,9 +3,8 @@ const toggle = document.querySelector(".toggle");
          const navigation = document.querySelector(".navigation");
          toggle.addEventListener("click", () => { 
 
-               console.log("h");
                main.classList.toggle("close-main");
-               navigation.classList.toggle("close");
+               navigation.classList.toggle("close-side-nav");
                
 
                  
@@ -25,7 +24,7 @@ const toggle = document.querySelector(".toggle");
 
                  const collapseMenu = this.nextElementSibling;
                  
-                 collapseMenu.classList.toggle("show");
+                 collapseMenu.classList.toggle("show-menu");
                     
                   const last =  this.lastElementChild;
                    

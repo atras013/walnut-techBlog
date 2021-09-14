@@ -20,7 +20,12 @@ body {
    overflow-x: hidden;
 }
 
-.container {
+h2 {
+
+    font-size: 24px;
+}
+
+.admin-container {
 
   position: relative;
   width: 100%;
@@ -35,7 +40,12 @@ body {
      background-color: #003147;
      transition: .5s;
      overflow: hidden;
+     cursor: pointer;
      
+}
+
+.navigation p {
+    margin-bottom: 0;
 }
 
 
@@ -91,9 +101,6 @@ body {
     font-size: 14px;
     display: block;
     position: relative;
-    
-    
-    height: 60px;
     line-height: 60px;
     white-space: nowrap;
 }
@@ -133,7 +140,7 @@ body {
     padding-right: 18px;
 }
 
-.close  {
+.close-side-nav {
      
     width: 60px;
 }
@@ -155,18 +162,18 @@ body {
 }
 .navigation ul li .collapse__menu { 
    
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     text-decoration: none;
     color: #fff;
-    height:40px;
+    height:auto;
     font-size: 14px;
     
    
     
 }
 .navigation ul li .collapse__menu a{
-    padding-right: 20px;
+    padding: 14px;
     font-size: 14px;
 
 }
@@ -198,8 +205,6 @@ body {
     display: block;
     position: relative;
     
-    
-    height: 60px;
     line-height: 60px;
     white-space: nowrap;
 }
@@ -239,7 +244,7 @@ body {
   
     background-color: #fff;
     width: 200px;
-    height: 200px;
+    height: 170px;
     display: none;
     flex-direction: column;
     transform: all .5s;
@@ -255,7 +260,7 @@ body {
 .main .dropdown-menu .user-info {
    
    position: absolute;
-  top: 30px;
+   top: 10px;
     text-align: center;
     display: flex;
     row-gap: 6px;
@@ -287,7 +292,7 @@ body {
     
 }
 
-.show { 
+.show-menu { 
     display: flex;
     background-color: #03415d;
     
@@ -299,4 +304,291 @@ body {
 
 .dropdown-menu.show { 
     display: flex;
+}
+
+
+/** User Profile **/
+
+.admin-container .profile {
+     
+     margin-right: 70px;
+     margin-top: 20px;
+     width: 500px;
+}
+
+
+
+.admin-container .profile .header {
+     
+     margin-bottom: 40px;
+     font-size: 22px;
+}
+
+
+.admin-container .profile .form-group {
+     
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 30px;
+   
+}
+.admin-container .profile .form-group input {
+     
+  height: 38px;
+   
+}
+.admin-container .profile .form-group label {
+     
+   font-size: 18px;
+
+   
+}
+
+
+
+
+/** User Post **/
+
+.admin-container .posts {
+     
+     margin-right: 40px;
+     margin-top: 20px;
+     width: 1200px;
+     
+}
+.admin-container .posts .form {
+     
+    
+     display: grid;
+     grid-column: 1fr 1fr;
+     grid-row: auto auto auto;
+     column-gap: 30px;
+}
+.posts .create-btn  {
+      
+    align-items: flex-end;
+     
+}
+
+
+
+
+
+.admin-container .posts .header {
+    grid-column: 1 / 3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    background-color: #38c065fb;
+    font-size: 20px;
+    color: #fff;
+    padding: 8px;
+}
+.admin-container .posts .header .icon {
+    
+    font-size: 24px;
+    
+}
+
+
+.title-section {
+      
+    width: 800px;
+    height: 350px;
+    background-color: #fff;
+    padding: 20px;
+    grid-column: 1 / 2;
+}
+
+.title-section .post_image { 
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.admin-container .posts .title-label {
+     
+    font-size: 18px;
+    margin:20px 0px;
+ 
+    
+ }
+
+
+
+.title-section .post_image .file{
+      
+    font-size: 12px;
+    background-color: white;
+    border-radius:60px;
+    border: 1px solid rgb(219, 219, 219);
+    width: 200px;
+    outline: none;
+   transition: all 0.3s;
+   cursor: pointer;
+}
+.title-section .post_image .file:hover{
+
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.308);
+  
+}
+
+::-webkit-file-upload-button{ 
+    font-size: 12px;
+    color: white;
+    background: #b92b27; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #b92b27, #1565c0); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #b92b27, #1565c0);
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 1px 0 1px 1px #6b4559;
+    outline: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+.title-section .post_image label{
+    
+    font-size: 18px;
+    margin:20px 0 15px 0;
+     
+
+}
+
+.categories-and-tags {
+    width: 370px;
+    height: 350px;
+    background-color: #fff;
+    grid-column: 2 / 3;
+}
+.post-body {
+  
+     grid-column: 1 / 3;
+     margin-top: 20px;
+     background-color: #fff;
+
+     height: auto;
+   
+}
+
+
+.post-body .body-header { 
+    
+    font-size: 22px;
+    margin: 20px 20px;
+
+}
+
+.categories-and-tags .choices {
+
+    direction: rtl;
+}
+
+
+.categories-and-tags .choices__inner {
+    
+    border-radius: 30px;
+    padding-right: 20px;
+}
+
+
+.categories-and-tags .choices__list--dropdown { 
+
+     height: 200px;
+     
+}
+
+.categories-and-tags .choices__list {
+
+    height: 200px;
+}
+
+.categories-and-tags .categories-header , .tags-header {
+
+    font-size: 16px;
+}
+
+.all-posts {
+    max-width: 1500px;
+
+    margin:40px 40px 40px 20px;
+}
+.all-posts .card-header h6{
+     
+    font-size: 20px;
+}
+
+.all-posts .table .like-table-head {
+     
+    font-size: 26px;
+    
+}
+.all-posts .table .table-haad-likes {
+     
+ text-align: center;
+   
+    
+}
+
+.all-posts .action-th {
+    column-gap: 8px;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    border-bottom: none;
+}
+ 
+
+
+.all-posts .view-icon , 
+.delete-icon ,
+.edit-icon {
+    font-size: 18px;
+    text-align: center;
+    
+}
+
+
+.post-delete-modal {
+
+    direction: rtl;
+}
+.post-delete-modal .modal-header .close{
+
+    margin: 0;
+}
+
+#example_wrapper .col-sm-12 {
+     
+     width: 100px;
+    
+}
+
+#example_wrapper .count-of-record {
+     
+     width: auto;
+    
+}
+
+#example_wrapper .search-the-table {
+     
+     width: auto;
+     margin-right: 100px;
+    
+}
+
+#example_filter label input {
+       
+    width: 250px;
+    padding: 15px;
+     
+       
+}
+
+#example_wrapper .comment-icon { 
+    font-size: 22px;
 }
